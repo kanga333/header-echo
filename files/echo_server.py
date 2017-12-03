@@ -13,6 +13,6 @@ class RequestHandler(BaseHTTPRequestHandler):
         self.finish()
         self.connection.close()
 
-port = 80
+port = 8000
 server = HTTPServer(('', port), RequestHandler)
 server.serve_forever()
